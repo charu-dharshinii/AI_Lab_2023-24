@@ -61,23 +61,17 @@ def bfs(visited, graph, node):
                 
                 queue.append(neighbour)
 
-# Driver Code
+#Driver Code
 
 print("BFS order is ")
 
 bfs(visited, graph,'2')
 
 
-
-
-
-
-
-
-
-
-
 ### Output:
+
+![Screenshot (450)](https://github.com/Dhivya-bharathi88/AI_Lab_2023-24/assets/128019999/e1464241-2d62-408d-904f-9b4834282492)
+
 
 
 
