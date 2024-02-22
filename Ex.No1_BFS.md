@@ -21,33 +21,42 @@ To write a python program to implement Breadth first Search.
    
 ### Program:
 
-graph = {
- '2' : ['3','4'],
- '3' : ['5'],
- '4' : ['6','7'],
- '6' : [],
- '5' : ['6'],
- '7' : ['8'],
- '8' : []
- }
-visited = [] # List for visited nodes.
-queue = []     #Initialize a queue
-def bfs(visited, graph, node):
-    visited.append(node)
-    queue.append(node)
-    while queue:
-        m = queue.pop(0)
-        print(m)
-        for neighbour in graph[m]:
-            if neighbour not in visited:
-                visited.append(neighbour)
-                queue.append(neighbour)
+# Using a Python dictionary to act as an adjacency list
 
-# Driver Code
-print("BFS order is ")
-bfs(visited, graph,'2')    
+graph = {
+  '5' : ['3','7'],
+  '3' : ['2', '4'],
+  '7' : ['8'],
+  '2' : [],
+  '4' : ['8'],
+  '8' : []
+}
+
+visited = set() # Set to keep track of visited nodes of graph.
+
+def dfs(visited, graph, node):  #function for dfs 
+
+    if node not in visited:
+    
+        print (node)
+        
+        visited.add(node)
+        
+        for neighbour in graph[node]:
+        
+            dfs(visited, graph, neighbour)
+            
+#Driver Code
+
+print("Following is the Depth-First Search")
+
+dfs(visited,graph,'5')
+
 
 ### Output:
+
+![Screenshot (451)](https://github.com/Dhivya-bharathi88/AI_Lab_2023-24/assets/128019999/8c380502-80ed-4bfa-acc6-04924d465f88)
+
 
 
 
