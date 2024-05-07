@@ -1,5 +1,5 @@
 # Ex.No: 8  Logic Programming –  Medical Diagnosis Expert System
-### DATE:                                                                            
+### DATE:  23/03/2024                                                                          
 ### REGISTER NUMBER : 212221220008
 ### AIM: 
 Write a Prolog program to build a medical Diagnosis Expert System.
@@ -14,51 +14,41 @@ Write a Prolog program to build a medical Diagnosis Expert System.
         
 
 ### Program:
-
 ```
-
 hypothesis(Patient,german_measles) :-
-symptom(Patient,fever),
-symptom(Patient,headache),
-symptom(Patient,runny_nose),
-symptom(Patient,rash).
+	symptom(Patient,fever),
+	symptom(Patient,headache),
+	symptom(Patient,runny_nose),
+	symptom(Patient,rash).
 hypothesis(Patient,flu) :-
-symptom(Patient,fever),
-symptom(Patient,headache),
-symptom(Patient,body_ache),
-symptom(Patient,conjunctivitis),
-symptom(Patient,chills),
-symptom(Patient,sore_throat),
-symptom(Patient,runny_nose),
-symptom(Patient,cough).
+    symptom(Patient,fever),
+    symptom(Patient,headache),
+	symptom(Patient,body_ache),
+	symptom(Patient,conjunctivitis),
+	symptom(Patient,chills),
+	symptom(Patient,sore_throat),
+	symptom(Patient,runny_nose),
+	symptom(Patient,cough).
 hypothesis(Patient,common_cold) :-
-symptom(Patient,headache),
-symptom(Patient,sneezing),
-symptom(Patient,sore_throat).
+	symptom(Patient,headache),
+	symptom(Patient,sneezing),
+	symptom(Patient,sore_throat).
 hypothesis(Patient,chicken_pox) :-
-symptom(Patient,fever),
-symptom(Patient,chills),
-symptom(Patient,body_ache),
-symptom(Patient,rash).
+	symptom(Patient,fever),
+	symptom(Patient,chills),
+	symptom(Patient,body_ache),
+	symptom(Patient,rash).
 hypothesis(Patient,measles) :-
-symptom(Patient,cough),
-symptom(Patient,sneezing),
-symptom(Patient,runny_nose).
+	symptom(Patient,cough),
+	symptom(Patient,sneezing),
+	symptom(Patient,runny_nose).
 symptom(raju,headache).
 symptom(raju,sneezing).
 symptom(raju,sore_throat).
 ```
 
-
-
-
-
-
-
-
 ### Output:
-
-![image](https://github.com/charu-dharshinii/AI_Lab_2023-24/assets/130828943/a51bf0e9-89e4-4073-8fc4-52c7d01dea69)
+![Screenshot (466)](https://github.com/Dhivya-bharathi88/AI_Lab_2023-24/assets/128019999/878d1d15-7fa3-4c49-a51f-7548e5cc86ed)
 
 
 ### Result:
