@@ -66,7 +66,7 @@ Step 10 : Obtain the plan for given problem.<br>
 (:init (on-table a) (on-table b) (on-table c)
 (clear a) (clear b) (clear c) (arm-empty))
 (:goal (and (on a b) (on b c))))
-
+```
 ### Output/Plan:
 
 ![WhatsApp Image 2024-04-26 at 9 43 53 PM](https://github.com/Dhivya-bharathi88/AI_Lab_2023-24/assets/128019999/882c8953-4939-49be-9c2a-149c3b13e1cb)
